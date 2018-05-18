@@ -5,4 +5,4 @@ Made by Sample Name Team
 Severyanov Vasily
 Kulikov Ilya
 Burov Ilya
-Dingo
+Zaytsev Egor
