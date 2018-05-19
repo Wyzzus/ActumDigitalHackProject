@@ -6,6 +6,7 @@ public class SideMenuScript : MonoBehaviour {
     public Animator MenuAnimator;
 
     public int currentPage = 0;
+    public GameObject[] Forms;
 	// Use this for initialization
 	void Start () {
 		
@@ -21,4 +22,15 @@ public class SideMenuScript : MonoBehaviour {
         MenuAnimator.SetBool("SideMenuOn", !MenuAnimator.GetBool("SideMenuOn"));
     }
 
+
+    public void ChooseForm(int k)
+    {
+        for (int i = 0; i < Forms.Length; i++)
+        {
+            if (i != k)
+                Forms[i].SetActive(false);
+            else
+                Forms[i].SetActive(true);
+        }
+    }
 }

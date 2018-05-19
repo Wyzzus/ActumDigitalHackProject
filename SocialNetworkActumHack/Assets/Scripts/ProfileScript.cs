@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class ProfileScript : MonoBehaviour {
     public Image Avatar;
+    public Image SideMenuAvatar;
+    public Text SideMenuName;
     public Sprite baseAvatar;
     public string MyName;
     public int MyStatus;
     public Image RateImage;
     public float Rate = 5;
     public Text RateValue;
+    public RectTransform hacksLayout;
+    public RectTransform Content;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,11 +23,13 @@ public class ProfileScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         SetRate();
+        Content.sizeDelta = new Vector2(Content.sizeDelta.x, 1200 + 57 * hacksLayout.childCount);
 	}
 
     public void SetName(string nm)
     {
         MyName = nm;
+        SideMenuName.text = nm;
     }
 
     public void SetStatus(int st)
@@ -42,7 +48,8 @@ public class ProfileScript : MonoBehaviour {
         yield return www;
         Avatar.sprite = Sprite.Create(www.texture, new Rect(0, 0, www.texture.width, www.texture.height), new Vector2(0, 0));
         if (Avatar.sprite == null)
-            Avatar.sprite = baseAvatar;
+            Avatar.sprite = baseAvatar; 
+        SideMenuAvatar.sprite = Avatar.sprite;
         //Avatar.SetNativeSize();
     }
 

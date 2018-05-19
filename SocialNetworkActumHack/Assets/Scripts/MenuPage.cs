@@ -23,7 +23,8 @@ public class MenuPage : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if (Active)
         {
-            ActiveBG.enabled = true;PageName.color = Color.black;
+            float k = 119 / 256;
+            ActiveBG.enabled = true;PageName.color = new Color(k, k, k, 1);
 
         }
         else
@@ -44,7 +45,8 @@ public class MenuPage : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     }
     public void OnPointerEnter(PointerEventData ed)
     {
-        if (!Active) PageName.color = Color.black;
+        float k = 119 / 256;
+        if (!Active) PageName.color = new Color(k,k,k,1);
     }
 
     public void OnPointerExit(PointerEventData ed)
