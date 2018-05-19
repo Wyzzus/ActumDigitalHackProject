@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; 
 
 public class ProfileScript : MonoBehaviour {
     public Image Avatar;
@@ -9,6 +9,8 @@ public class ProfileScript : MonoBehaviour {
     public Text SideMenuName;
     public Sprite baseAvatar;
     public string MyName;
+    public string GitName;
+    public string TelegramName;
     public int MyStatus;
     public Image RateImage;
     public float Rate = 5;
@@ -39,7 +41,13 @@ public class ProfileScript : MonoBehaviour {
 
     public void SetGitName(string nm)
     {
+        GitName = nm;
         StartCoroutine(LoadGitAvatar(nm));
+    }
+
+    public void SetTelegramName(string nm)
+    {
+        TelegramName = nm;
     }
 
     public IEnumerator LoadGitAvatar(string name)

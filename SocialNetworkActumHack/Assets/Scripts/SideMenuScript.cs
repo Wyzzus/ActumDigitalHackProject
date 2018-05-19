@@ -32,5 +32,6 @@ public class SideMenuScript : MonoBehaviour {
             else
                 Forms[i].SetActive(true);
         }
+
     }
 }
