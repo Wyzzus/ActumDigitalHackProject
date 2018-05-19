@@ -475,12 +475,15 @@ MonoBehaviour:
   SideMenuName: {fileID: 354097142}
   baseAvatar: {fileID: 21300000, guid: 565551ca6270e48e4a7c5bcdaf7542cc, type: 3}
   MyName: 
+  GitName: 
+  TelegramName: 
   MyStatus: 0
   RateImage: {fileID: 863173184}
   Rate: 5
   RateValue: {fileID: 346483711}
   hacksLayout: {fileID: 1404484066}
   Content: {fileID: 766229551}
+  MyProfile: 1
 --- !u!114 &67235633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,7 +1140,7 @@ RectTransform:
   m_Father: {fileID: 546165476}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.55122256}
+  m_AnchorMin: {x: 0, y: 0.5512438}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -2425,7 +2428,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2047062298}
-        m_MethodName: GetCodePlace
+        m_MethodName: GetLogin
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3576,7 +3579,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2047062298}
-        m_MethodName: GetCodePlace
+        m_MethodName: GetPasswordAgain
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4388,7 +4391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 8.499939, y: -344}
+  m_AnchoredPosition: {x: 8.5, y: -344}
   m_SizeDelta: {x: 541, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563188663
@@ -5017,7 +5020,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2047062298}
-        m_MethodName: GetCodePlace
+        m_MethodName: GetPassword
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7389,7 +7392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 17.300003, y: 0}
+  m_AnchoredPosition: {x: 17.300049, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1018466416
@@ -8257,7 +8260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.7999878, y: -0.5}
+  m_AnchoredPosition: {x: 0.8000488, y: -0.5}
   m_SizeDelta: {x: -51.59999, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221278119
@@ -9332,7 +9335,18 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2047062298}
+        m_MethodName: GetPassword
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
@@ -9894,7 +9908,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 163387404}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.4487774
+  m_Size: 0.44875625
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12543,7 +12557,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1699067725}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2047062298}
+        m_MethodName: EnterInApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1699067725
@@ -13436,7 +13461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 17.300003, y: 2.2}
+  m_AnchoredPosition: {x: 17.300049, y: 2.2000008}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1856874401
@@ -14075,7 +14100,18 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2047062298}
+        m_MethodName: GetLogin
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
@@ -15206,7 +15242,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2047062298}
-        m_MethodName: GetNumber
+        m_MethodName: GetGetDate
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

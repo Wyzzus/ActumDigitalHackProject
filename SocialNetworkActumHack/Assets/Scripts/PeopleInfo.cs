@@ -33,4 +33,9 @@ public class PeopleInfo : MonoBehaviour {
         RateField.text = Rate;
         LangField.text = Language;
     }
+
+    public void OpenClose()
+    {
+        
+    }
 }

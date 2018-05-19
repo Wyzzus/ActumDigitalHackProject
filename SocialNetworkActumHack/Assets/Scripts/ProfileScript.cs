@@ -17,6 +17,7 @@ public class ProfileScript : MonoBehaviour {
     public Text RateValue;
     public RectTransform hacksLayout;
     public RectTransform Content;
+    public bool MyProfile = true;
 	// Use this for initialization
 	void Start () {
 		
@@ -57,7 +58,7 @@ public class ProfileScript : MonoBehaviour {
         Avatar.sprite = Sprite.Create(www.texture, new Rect(0, 0, www.texture.width, www.texture.height), new Vector2(0, 0));
         if (Avatar.sprite == null)
             Avatar.sprite = baseAvatar; 
-        SideMenuAvatar.sprite = Avatar.sprite;
+        if(MyProfile) SideMenuAvatar.sprite = Avatar.sprite;
         //Avatar.SetNativeSize();
     }
 
