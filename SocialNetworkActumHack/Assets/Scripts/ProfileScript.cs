@@ -22,6 +22,7 @@ public class ProfileScript : MonoBehaviour {
     public InputField git;
     public InputField teleg;
     public Button bt;
+
 	// Use this for initialization
 	void Start () {
         if (MyProfile)
